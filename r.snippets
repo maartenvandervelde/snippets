@@ -98,15 +98,22 @@ snippet shinyapp
 	
 	shinyApp(ui, server)
 
+
+# install package
+snippet ins
+	install.packages("${1:package}")
+
+
+# Count number of unique items in vector
+snippet lu
+	length(unique(${1:variable}))
+	
+
 # Modify data in place with pipe
 snippet mp
 	${1:data} <- ${1:data} %>%
 		${0}
 
-
-# Count number of unique items in vector
-snippet lu
-	length(unique($0))
 	
 ## Start ggplot
 snippet gg
